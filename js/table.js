@@ -4,12 +4,9 @@ function setTable(arr) {
     document.querySelector('#requests-table tbody').innerHTML = '';
     arr.forEach(function (item) {
         document.querySelector('#requests-table tbody').insertAdjacentHTML('beforeend', `
-            <tr>
+            <tr class="stroke">
                 <td>${item.question}</td>
                 <td>${item.answer}</td>
-                <td>
-                    <button class="delete-btn" onClick={deleteItem(${item.id})}>Удалить</button>
-                </td>
             </tr>
         `);
     });

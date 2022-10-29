@@ -40,9 +40,26 @@ body:after {
   background: #1539CF;
 } */
 
+.wrapper,
+.links-wrapper,
+.dictionary-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  height: 100px;
+}
+
 h2.main-header {
  color: #0b26e7ab;
- line-height: 90px;
+ line-height: 50px;
 }
 
 .nav {
@@ -212,6 +229,7 @@ a.nav__item-text {
   display: none;
 }
 
+.profile,
 .profile img {
   height: 100%;
   margin-right: 10px;
@@ -420,11 +438,12 @@ button {
   display: none;
 }
 
-.links-wrapper {
-  margin: 15px;
+.links-wrapper,
+.dictionary-wrapper {
+  padding: 15px;
   display: flex;
-  justify-content: center;
-  height: 100px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .new-words-link,
@@ -461,16 +480,31 @@ table {
   padding-left: 10px;
 }
 
+@media (max-width: 1200px) {
+  .wrapper {
+    max-height: 80px;
+  }
+  .header-bg {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
 @media (max-width: 786px) {
-  .links-wrapper + .links-wrapper {
+  .stroke {
+    padding: 15px;
+    font-size: 20px;
+  }
+  .wrapper {
     display: flex;
   }
 
-  .links-wrapper + .links-wrapper .main-header.header-bg {
+  .wrapper .main-header.header-bg {
     display: none;
   }
 
-  .links-wrapper + .links-wrapper .main-header.header-sm {
+  .wrapper .main-header.header-sm {
     display: block;
     line-height: 50px;
   }

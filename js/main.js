@@ -17,6 +17,7 @@ const a = document.querySelector('.nav .nav__btn');
 const linkPopup = document.querySelector('.nav');
 const linksPopup = document.querySelector('.nav__content');
 const allLinksPopup = document.querySelectorAll('.nav__content .nav__item');
+
 let correct;
 // Grisha/index.html?words=50
 // const params = new URLSearchParams(window.location.search)
@@ -113,7 +114,7 @@ function nextButtonClickHandler() {
     if (questionCounter % 5 === 0) {
         
         proverb.style.display = "flex";
-        let j = (randomInteger(1, 22));
+        let j = (randomInteger(1, 27));
         proverbPhrase.insertAdjacentHTML("beforeend", `<img src=img/cat${j}.jpeg>`)
         catNumber++;
         
@@ -227,3 +228,4 @@ function randomInteger(min, max) {
     let rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand);
 }
+

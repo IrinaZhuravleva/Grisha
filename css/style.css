@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 html,
 body {
   height: 100%;
@@ -498,20 +497,19 @@ table {
   }
   .wrapper {
     display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
   }
-
   .wrapper .main-header.header-bg {
     display: none;
   }
-
   h2 {
     font-size: 42px;
   }
   .wrapper .main-header.header-sm {
     display: block;
-    line-height: 42px;
+    line-height: 50px;
   }
-
   table,
   .delete-btn {
     font-size: 12px;
@@ -529,7 +527,6 @@ table {
 }
 
 @media (max-width: 565px) {
-  /* @media (max-width: 1565px) { */
   .proverb-expression {
     margin: auto;
     width: 95%;
@@ -548,6 +545,6 @@ table {
     display: flex;
   }
   .container {
-    padding-top: 70px;
+    padding-top: 30px;
   }
 }

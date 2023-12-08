@@ -131,7 +131,7 @@ function nextButtonClickHandler() {
         setTimeout(() => {
             proverb.style.display = "none";
             proverbPhrase.innerHTML = "";
-          }, "4000")
+          }, "3000")
     }
 
 
@@ -165,8 +165,6 @@ nextButton.addEventListener('click', function () {
 
 showQuestion();
 
-//вспомогат функции
-//тасование фишера-йетса
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1)); // случайный индекс от 0 до i

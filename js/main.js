@@ -1,3 +1,4 @@
+import { base } from './js/base.js';
 const button = document.querySelector('button');
 const nextButton = document.querySelector('button.nextButton');
 const expressionNumber = document.querySelector('.expression-number');
@@ -19,11 +20,7 @@ const linksPopup = document.querySelector('.nav__content');
 const allLinksPopup = document.querySelectorAll('.nav__content .nav__item');
 
 let correct;
-// Grisha/index.html?words=50
-// const params = new URLSearchParams(window.location.search)
-// params.get("words");
-// https://flaviocopes.com/urlsearchparams/
-// debugger
+
 let questionCounter = 0;
 let currentQuestionIndex = 0;
 let length = base.length;

@@ -1,22 +1,24 @@
 const base = [
 { "id": 70, "question": "следующий, затем", "answer": "next" }, 
 { "id": 71, "question": "существительное", "answer": "noun" }, 
-{ "id": 72, "question": "поставь номер/номер", "answer": "number" },
+    { "id": 72, "question": "uestio", "answer": "number" },
 { "id": 73, "question": "одно лишнее", "answer": "odd-one-out" },
 { "id": 74, "question": "порядок/поставь по порядку", "answer": "next" }]
 
-const array1 = base.map(item => item.answer);
+const array1 = base.map(item => item.question);
 const array2 = [...new Set(array1)];
 
-function checkDiff(arr1, arr2) {
-    const arr = [];
-    arr1.forEach((item, index) => {
-        if (item !== arr2[index]) {
+function checkDiff(arr) {
+    const arrNew = [];
+    arr.forEach((item, index) => {
+        if (item.includes('/^[а-яё]+$/i')) {
             arr.push(item);
         }
     });
-    return arr;
+    return arrNew;
 }
+
+checkDiff(base)
 
 // взять первый элемент из arr и заменить его на последний элемент из массива array2
 

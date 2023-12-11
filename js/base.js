@@ -123,6 +123,9 @@ const base = [{
 
 module.exports = { base };
 
+//===
+
+// ПРОВЕРКИ
 // const array1 = base.map(item => item.answer);
 // const array2 = [...new Set(array1)];
 

@@ -1,4 +1,3 @@
-import { base } from './js/base.js';
 const button = document.querySelector('button');
 const nextButton = document.querySelector('button.nextButton');
 const expressionNumber = document.querySelector('.expression-number');
@@ -18,8 +17,6 @@ const a = document.querySelector('.nav .nav__btn');
 const linkPopup = document.querySelector('.nav');
 const linksPopup = document.querySelector('.nav__content');
 const allLinksPopup = document.querySelectorAll('.nav__content .nav__item');
-
-let correct;
 
 let questionCounter = 0;
 let currentQuestionIndex = 0;

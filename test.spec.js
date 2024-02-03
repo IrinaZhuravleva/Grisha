@@ -1,7 +1,7 @@
 const objectBase = require('./js/base.js');
 const chalk = require('chalk');
 
-const isCyrillic = (str) => /[а-яёA-Z.,!?/()\d]/.test(str);
+const isCyrillic = (str) => /^[а-яёА-ЯЁDVC1-9., --!?/()\d]+$/.test(str);
 const isLatin = (str) => /[a-zA-Z.,!?/()\d]/.test(str);
 
 test('Check Cyrillic language for each element in the array', () => {

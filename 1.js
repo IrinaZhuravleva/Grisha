@@ -10,5 +10,4 @@ const newArr = array1.filter(item => {
     return arr
 });
 
-// console.log('newArr' + newArr);
 console.log(newArr);

@@ -1,4 +1,4 @@
-const isCyrillic = (str) => /[а-яё.,!?/]()/i.test(str);
-const isLatin = (str) => /[a-zA-Z.,!?/]()/.test(str);
+const isCyrillic = (str) => /[а-яёA-Z.,!?/()\d]/.test(str);
+const isLatin = (str) => /[a-zA-Z.,!?/()\d]/.test(str);
 
 module.exports = { isCyrillic, isLatin };

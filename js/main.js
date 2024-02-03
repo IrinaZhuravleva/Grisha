@@ -18,6 +18,7 @@ const linkPopup = document.querySelector('.nav');
 const linksPopup = document.querySelector('.nav__content');
 const allLinksPopup = document.querySelectorAll('.nav__content .nav__item');
 
+
 let questionCounter = 0;
 let currentQuestionIndex = 0;
 let length = base.length;

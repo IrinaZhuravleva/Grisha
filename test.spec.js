@@ -1,7 +1,5 @@
-const { isCyrillic, isLatin } = require('./utilityFunctions'); 
-const { base } = require('./js/base.js');
-const chai = require('chai');
-const { expect } = chai;
+const utilityFunctions = require('./utilityFunctions');
+const baseModule = require('./js/base.js');
 
 // Ваши тесты здесь
 

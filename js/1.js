@@ -20,8 +20,6 @@ function checkDiff(arr) {
 
 checkDiff(base)
 
-// взять первый элемент из arr и заменить его на последний элемент из массива array2
-
 function replaceDup(arr, base) {
     return base.map((item, index) => {
         if (item.answer === arr[index]) {
